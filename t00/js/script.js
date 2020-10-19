@@ -95,24 +95,24 @@ let applyProperties = (object, btn) => {
     for (let [key, value] of Object.entries(object)) {
         if (key.charAt(0) !== "_") {
             properties.innerHTML +=
-                `<p class="property">${key}:` +
+                `<p class="prop">${key}:` +
                 `<span class="propValue"> ${value}</span></p>`;
         }
     }
     document
-        .querySelectorAll(".property")
+        .querySelectorAll(".prop")
         .forEach((elem) => (elem.style = "margin:0;"));
 };
 
 let changeStatus = (btn) => {
     if (btn) {
-        if (btn.innerHTML == "human prototype") {
+        if (btn.textContent == "human prototype") {
             applyProperties(human, btn);
-        } else if (btn.innerHTML == "dog prototype") {
+        } else if (btn.textContent == "dog prototype") {
             applyProperties(dog, btn);
-        } else if (btn.innerHTML == "vampire prototype") {
+        } else if (btn.textContent == "vampire prototype") {
             applyProperties(vampire, btn);
-        } else if (btn.innerHTML == "no prototype") {
+        } else if (btn.textContent == "no prototype") {
             applyProperties(Object.prototype, btn);
         }
     } else {
