@@ -53,19 +53,67 @@
 }
 
 .main__block-content {
+    display: flex;
+    flex-direction: column;
     width: calc(70% - 6px);
     background-color: rgba(255, 255, 255, 0.178);
     border: 1px solid silver;
     color: blanchedalmond;
 }
 
+.image-fav-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
 .film-photo {
-    width: 100px;
-    height: 150px;
-    background-color: red;
+    width: 250px;
+    height: 350px;
+    background-color:  transparent;
+}
+
+.add-to-favorite {
+    padding: 15px;
+    background-color:  rgba(255, 255, 255, 0.178);
+    border: 1px dashed silver;
+}
+
+.add-to-favorite:hover {
+    color: white;
+    background-color:  rgba(255, 255, 255, 0.418);
+    border: 1px solid gold;
+    box-shadow: 0 0 3px silver;
+    transition-duration: 1s;
 }
 
 .actors-list {
     display: flex;
     flex-wrap: wrap;
+}
+
+.actor-item {
+    border: 1px dashed red;
+    color: gold;
+}
+
+.actor-item + .actor-item {
+    margin-left: 10px;
+}
+
+.description__actors {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-nav * {
+    margin-bottom: 10px;
+    border-bottom: 2px solid goldenrod;
+}
+
+.sidebar-nav *:hover {
+    border-bottom: 2px solid gold;
+    text-shadow: 0 0 3px white;
+    transition-duration: 1s;
 }
