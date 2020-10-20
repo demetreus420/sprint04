@@ -1,3 +1,5 @@
+"use strict";
+
 let allMovies = new Set();
 let favMovies = new Set();
 
