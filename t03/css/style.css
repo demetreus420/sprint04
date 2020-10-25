@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.main__block {
+    display: inline-block;
+    margin: 24px;
+    width: 120px;
+    height: 120px;
+    border: 19.9px dashed rgba(255, 255, 255, 0.726);
+    transform: rotate(45deg);
+    transition: 0.1s;
+}
+
+.isActive {
+    border: none;
+}
+
+#red {
+    background: red;
+}
+
+#green {
+    background: green;
+}
+
+#blue {
+    background: blue;
+}
+
+#yellow {
+    background: yellow;
+}
+
+#orange {
+    background: orange;
+}
+
+#fuchsia {
+    background: fuchsia;
+}
