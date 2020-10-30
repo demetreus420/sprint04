@@ -1,0 +1,19 @@
+
+.counter {
+  position: fixed;
+  padding: 14px;
+  right: 24px;
+  border-radius: 14px;
+  font-weight: bolder;
+  color: wheat;
+  background: red;
+}
+
+
+
+.image {
+  display: block;
+  margin: 16px auto;
+  background-color: silver;
+  border: 1px solid red;
+}
