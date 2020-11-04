@@ -3,7 +3,7 @@
 let get = (id) => document.querySelector(id);
 let werewolfMixin = {
     howl() {
-        console.log(`ARH-WOOOOOOOOOOOOOOOOOOOO`);
+        console.log('ARH-WOOOOOOOOOOOOOOOOOOOO');
     },
 };
 
